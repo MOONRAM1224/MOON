@@ -1,0 +1,290 @@
+* {
+
+margin: 0;
+box-sizing: border-box;
+padding-left: 0;
+padding-right: 0;
+
+}
+
+.contenedor {
+
+padding-top: 300px;    
+padding-bottom: 300px; 
+align-items: center;
+text-align: center;
+background-image: url(../img/Arena_Normal.png);
+background-size: cover;
+color: white;
+
+}
+
+.contenedor2 {
+  
+display: flex;
+flex-wrap: wrap;    
+padding-top: 100px;
+margin-left: 300px;
+margin-right: 300px;
+align-items: center;
+color: black;
+    
+}
+
+.col-lg-6 {
+
+text-align: justify;
+align-items: center;
+color: black;
+font-family: 'Roboto';
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+
+img {
+
+width: 100%;
+
+}
+
+.row {
+
+display: flex;
+padding: 5px;
+flex-wrap: wrap;
+
+}
+
+.column {
+
+flex: 25%;
+padding: 5px;
+
+}
+
+.column img {
+
+margin-top: 5px;
+
+}
+
+.column img:hover {
+
+transform: scale(1.1);
+    
+}
+
+
+// GALERIA
+
+.light-box {
+
+position: fixed;
+top: 0;
+left: 0;
+background:rgba(0, 0, 0, 0.5);
+transition: transform .3s ease-in-out;
+width: 100%;
+height: 100vh;
+z-index: 1000;
+display: flex;
+justify-content: center;
+align-items: center;
+transform: scale(0);
+    
+}
+    
+.light-box img {
+
+padding-top: 100px;
+padding-bottom: 100px;
+height: auto;
+width: auto;
+max-height: 100vh;
+    
+}
+    
+.light-box:target {
+
+transform: scale(0.8);
+    
+}
+    
+.close {
+    
+display:block;
+position: absolute;
+top: 40px;
+right: 40px;
+background: #000000;
+color: white;
+text-decoration: none;
+width: 40px;
+height: 40px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+    
+}
+
+@media (max-width: 800px) {
+ 
+    .column {
+        flex: 50%;
+    }
+
+}
+
+@media (max-width: 600px) {
+ 
+    .column {
+        flex: 100%;
+    }
+
+}
+
+.circulo {
+
+align-items: center;
+justify-items: center;
+
+}
+
+.circulo > .imagen {
+
+width: 100%;
+height: 100%;
+border-radius: 100%;
+
+}
+
+
+
+/* --- HEADER --- */
+
+.nav {
+
+display:block;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding-top: 100px; 
+padding-bottom: 100px; 
+
+}
+
+.logo {
+
+display: flex;
+justify-content: space-around;
+list-style: none;
+
+}
+
+.logo > li > a {
+
+display: block;
+color: white;
+text-decoration: none;
+
+}
+
+.menu-vertical {
+
+position: absolute;
+display: none;
+list-style: none;
+width: 150px;
+background-color: rgba(0,0,0, .5);
+font-size: 20px;
+
+}
+
+.logo li:hover .menu-vertical {
+
+display: block;
+
+}
+
+.menu-vertical li:hover {
+
+background-color: black;
+display: block;
+
+}
+
+.menu-vertical li a {
+
+color: white;
+padding: 4px 4px;
+text-decoration: none;
+
+}
+
+.menu-vertical li a:hover {
+
+color: white;
+padding: 4px 4px;
+text-decoration: none;
+    
+}
+
+.LOGO:hover {
+
+color: white;
+text-decoration: none;
+filter: invert(30%);
+        
+}
+
+
+/* --Footer-- */
+
+.footer {
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding-top: 100px;
+}
+    
+.footer ul li {
+    
+display: inline-block;
+text-align: center;
+margin: 0 50px;
+width: 5px; 
+position: relative;
+right: 25px;
+    
+}
+    
+.footer ul li a {
+    
+display: block;
+color:black;
+padding: 0 5px;
+font-size: 40px;
+transition: .2s;
+    
+}
+    
+.footer ul li .facebook:hover {
+    
+color: var(--facebook);
+    
+}
+    
+.footer ul li .instagram:hover {
+    
+color: var(--instagram);
+        
+}
+    
+.footer ul li .twitter:hover {
+    
+color: var(--twitter);
+    
+}
